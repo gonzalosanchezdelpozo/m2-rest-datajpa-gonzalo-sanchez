@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 public class LibroController {
@@ -20,9 +21,7 @@ public class LibroController {
     LibroRepository repository;
 
     //constructores
-    public LibroController(LibroRepository repository) {
-        this.repository = repository;
-    }
+    public LibroController(LibroRepository repository) {this.repository = repository;}
 
     //metodos
     //trabajamos con listas cuando queremos recuperar todos los elementos

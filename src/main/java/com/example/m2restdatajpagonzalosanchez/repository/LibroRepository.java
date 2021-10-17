@@ -10,4 +10,6 @@ import java.util.List;
 public interface LibroRepository extends JpaRepository<Libro, Long> {
 
     List<Libro> findByTitulo(String titulo);
+
+
 }
