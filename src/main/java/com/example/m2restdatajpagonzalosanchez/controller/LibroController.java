@@ -54,4 +54,15 @@ public class LibroController {
         repository.save(libro);
 
     }
+
+    @DeleteMapping("/libros/{id}")
+    public void DeleteById(@PathVariable Long id){
+
+        if(repository.existsById(id))
+
+           repository.deleteAllById(id);
+
+
+    }
+
 }
